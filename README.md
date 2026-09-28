@@ -1,6 +1,6 @@
 # Esse repositorio foi feito como um guia para pessoas conquistarem seu certificado **[CS50](https://cs50.harvard.edu)** de forma 100% gratuita
 
-# Cadastro na **[EDx](https://www.edx.org/)**
+## Cadastro na **[EDx](https://www.edx.org/)**
 1. Para conseguir seu certificado gratuitamente você tem de se cadastrar no site da **EDx**, você possui a opção de pagar pelo certificado ou conseguir gratuitamente pela plataforma de harvard.
 
 2. Após a inscrição no site você procura pelo curso **CS50** e inscreva-se nele.

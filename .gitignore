@@ -1,0 +1,5 @@
+# Pasta de compilador vscode
+/.vscode
+
+# Exclui qualquer tipo de arquivo .exe
+*.exe
