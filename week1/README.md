@@ -63,9 +63,9 @@ flowchart TD
     B --> |yes| C["x is less than y"]
     C --> Z([stop])
     B --> |no| D{x > y}
-    D --> |yes| E{"x is more than y"}
+    D --> |yes| E["x is more than y"]
     E --> Z
-    D --> |no| F{"x is equal to y"}
+    D --> |no| F["x is equal to y"]
     F --> Z
 ```
 
