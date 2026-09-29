@@ -9,22 +9,6 @@ flowchart LR
   B --> C[Machine Code]
 ```
 
-## Por que meu script não compila ou não é executado?
-
-1. No curso de Harvard é usado um sistema MacOS e pessoalmente utilizo um sistema Windows, para compilação de scripts C em sistemas MacOS e Linux basta apenas escrever:
-
-`make script.c` 
-
-Já para windows: 
-
-`g++ script.c -o script.exe`
-
-```mermaid
-flowchart LR
-  A[arguments] --> B[function]
-  B --> C[side effects]
-```
-
 ## Finalidade do comando `\n` em printf e mais outros comandos
 
 Ele serve principalmente para quando for executado por uma CLI, a linha de comando não fique a frente do output, e existem diversos tipos de comandos como:
@@ -39,3 +23,12 @@ Ele serve principalmente para quando for executado por uma CLI, a linha de coman
 
 - Algumas linguagens como Python possuem comando simples como print já antecipadamente carregadas ao fazer ao realizar a execução e compilação do script, porém o C é necessario definir quais bibliotecas deverão ser utilizadas ao realizar a compilação e execução de um script
 
+# Por que meu programa não compila?
+
+No curso de Harvard é usado uma Makefile para compilar os arquivos em C sem precisar da definição de um comando extenso para cada vez que for necessario recompilar um script.
+
+Primeiro você precisa configurar esse Makefile para seu uso, se você irá baixar a biblioteca e colocar em seu programa de compilação ou diretamente na pasta do projeto.
+
+# Placeholder em cima de um printf
+
+`%s` = placeholder de uma string
