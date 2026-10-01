@@ -124,11 +124,11 @@ Colocar uma condicional if em cada uma das três possibilidades:
 flowchart TD
   A[(start)] -->  B{x < y}
   B --> |false| C{x > y}
-  B --> |true| ["x is less than y"] --> C
+  B --> |true| L["x is less than y"] --> C
   C --> |false| D{x == y}
-  C --> |true| ["x is greater than y"] --> D
+  C --> |true| Y["x is greater than y"] --> D
   D --> |false| E[(stop)]
-  D --> |true| ["x is equal than y"] --> E
+  D --> |true| X["x is equal than y"] --> E
 ```
 
 Ou não colocar uma condicional else no final:
