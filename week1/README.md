@@ -142,7 +142,7 @@ flowchart TD
     D --> |yes| E["x is more than y"]
     D --> |no| F["x is equal to y"]
     E --> Z
-    F --> |yes| F
+    F --> |yes| Z
     F --> |no| Z
 ```
 
