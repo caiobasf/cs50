@@ -46,15 +46,20 @@ Para você fazer um print de uma variavel você tem que colocar um placeholder, 
 
 ## Condicionais
 
-`if (x < y)
-{
-  printf("x is less tan y\n")
-} else if (y < x) 
-{
-  printf ("y is less thab x\n)
-} else {
-  printf("y is equal to x")
-}`
+```
+if (x < y)
+  {
+    printf("x is less tan y\n")
+  } 
+  else if (y < x) 
+  {
+    printf ("y is less thab x\n)
+  } 
+  else 
+  {
+    printf("y is equal to x")
+  }
+```
 
 - script de condição para verificar se um número é maior, menor ou igual a outro.
 
@@ -90,7 +95,7 @@ flowchart TD
 6. long = números inteiro que armazenam até no maximo de **64 bits ou 8 bytes**
 7. string = armazena caracteres
 
-# Funções da biblioteca cs50
+## Funções da biblioteca cs50
 
 1. get_char
 2. get_double
@@ -98,7 +103,7 @@ flowchart TD
 4. get_long
 5. get_string
 
-# Types para mostrar output tipos de valores
+## Types para mostrar output tipos de valores
 
 1. %c = printa um caractere
 2. %f = printa um float
@@ -106,7 +111,7 @@ flowchart TD
 4. %li = printa um long ou long int
 5. %s = printa uma string
 
-# variaveis
+## variaveis
 
 1. como definir?
    `tipos de dado` `nome da variavel` = `valor dessa variavel`
@@ -199,7 +204,6 @@ do
   n = get_int("What's n? ")
 }
 while (n < 0)
-## problemas de escopo
 ```
 5.1. a diferença do while loop para o while loop é que a do while primeiro faz a açao e verifica por ultimo se é real.
 
@@ -207,7 +211,7 @@ while (n < 0)
 
 - quando uma variavel é feita dentro de um loop, condicional ou função ela apenas existe dentro do mesmo, e não funciona para fora do propio escopo
 
-# criando funções em C
+## criando funções em C
 
 ```
 void meow(void)
@@ -223,14 +227,14 @@ void meow(void)
 
 3. void siginifica que é vazio, nesse caso, não possui output ou input
 
-# ideas de promises em C
+## ideas de promises em C
 
 1. conceito de promises em c, no qual você declara que vai haver uma função y no código, só que antes de rodar a função y tem uma função x que utiliza dessa funçao y, e então você apenas precisa declarar como "promessa" que essa funçao existe
 
 ```
-void meow(void);
+void meow(void); <- função y em promise 
 
-int main(void)
+int main(void) <-- função x
 {
   for (int i = 0; i < 3; i++)
   {
@@ -238,7 +242,7 @@ int main(void)
   }
 }
 
-void meow(void)
+void meow(void) <-- função y
 {
   printf("meow\n");
 }
@@ -256,3 +260,15 @@ void meow(void)
 
 3. style
 - além de condizer as outra duas primeiras o código ele é bem explicado? possui variaveis bem explicadas? funções bem explicadas? mensagens de erros úteis?
+
+## constantes
+
+1. diferente da variavel, o valor da constante não muda.
+
+## floating point imprecision
+
+- isso ocorre pois computadores armazenam números decimais usando frações binárias (base 2) o que torna impossível representar com exatidão finita certas frações decimais (base 10)
+
+## year 2038 problem
+
+- precisamente em 19 de janeiro de 2038 todos os calendário vão pensar que estamos em 13 de dezembro de 1901 devido ao integer overflow ou estouro de ponteiro de 32 bits de espaço de memoria que temos hoje nos calendarios 
